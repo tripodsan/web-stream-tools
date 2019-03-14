@@ -1,6 +1,6 @@
 {
   "name": "@tripod/web-stream-tools",
-  "version": "0.0.1-node8",
+  "version": "0.0.1-node8-1",
   "description": "Utility functions for WhatWG Streams",
   "main": "compat/streams.js",
   "repository": {
