@@ -1,8 +1,8 @@
 {
   "name": "@tripod/web-stream-tools",
-  "version": "0.0.1",
+  "version": "0.0.1-compat",
   "description": "Utility functions for WhatWG Streams",
-  "main": "lib/streams.js",
+  "main": "compat/streams.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openpgpjs/streams.git"
@@ -14,9 +14,13 @@
   },
   "homepage": "https://github.com/openpgpjs/streams#readme",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "jsdoc": "~3.5.5"
   },
   "scripts": {
-    "docs": "jsdoc lib -d docs --readme README.md"
+    "docs": "jsdoc lib -d docs --readme README.md",
+    "build": "babel lib -d compat"
   }
 }
