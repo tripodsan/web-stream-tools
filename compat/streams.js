@@ -11,7 +11,7 @@ var _nodeConversions = require("./node-conversions");
 
 var _reader = require("./reader");
 
-const NodeBuffer = typeof window === 'undefined' && require('buffer').Buffer;
+const NodeBuffer = require('buffer').Buffer;
 /**
  * Convert data to Stream
  * @param {ReadableStream|Uint8array|String} input  data to convert

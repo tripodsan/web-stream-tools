@@ -9,7 +9,7 @@ var _streams = _interopRequireDefault(require("./streams"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const NodeReadableStream = typeof window === 'undefined' && require('stream').Readable;
+const NodeReadableStream = require('stream').Readable;
 /**
  * Web / node stream conversion functions
  * From https://github.com/gwicke/node-web-streams

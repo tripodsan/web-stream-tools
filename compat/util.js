@@ -7,10 +7,10 @@ exports.isStream = isStream;
 exports.isUint8Array = isUint8Array;
 exports.concatUint8Array = concatUint8Array;
 exports.isIE11 = void 0;
-const isIE11 = typeof navigator !== 'undefined' && !!navigator.userAgent.match(/Trident\/7\.0.*rv:([0-9.]+).*\).*Gecko$/);
+const isIE11 = false;
 exports.isIE11 = isIE11;
 
-const NodeReadableStream = typeof window === 'undefined' && require('stream').Readable;
+const NodeReadableStream = require('stream').Readable;
 /**
  * Check whether data is a Stream, and if so of which type
  * @param {Any} input  data to check
