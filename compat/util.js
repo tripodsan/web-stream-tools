@@ -19,6 +19,10 @@ const NodeReadableStream = require('stream').Readable;
 
 
 function isStream(input) {
+  if (ReadableStream && ReadableStream.prototype.isPrototypeOf(input)) {
+    return 'web';
+  }
+
   if (NodeReadableStream && NodeReadableStream.prototype.isPrototypeOf(input)) {
     return 'node';
   }
